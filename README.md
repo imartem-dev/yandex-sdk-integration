@@ -31,7 +31,7 @@ MIT
 
 ## Support
 
-If this project is useful to you, you can support its development with a crypto tip — thank you!
+If this project is useful to you, you can support the original developer with a crypto tip — thank you!
 
 **USDT — Ethereum (ERC-20):**
 
