@@ -2,8 +2,8 @@
 
 A portable skill that turns any AI assistant into an expert at building and
 publishing games for **Yandex Games (Я.Игры)**: Yandex Games SDK integration
-(ads, leaderboards, cloud saves, purchases) for **browser/HTML5, Godot, and
-Unity**, plus the publishing and moderation rules.
+(ads, leaderboards, cloud saves, purchases) for **browser/HTML5, Three.js with
+TypeScript/Vite, Godot, and Unity**, plus the publishing and moderation rules.
 
 Its first rule: **always fetch Yandex's current rules and SDK docs before
 building** — they change, so the skill points the AI at the live docs instead of
@@ -21,7 +21,8 @@ trusting frozen copies.
 ## What's inside
 
 - `SKILL.md` — the workflow and a router to the references.
-- `references/` — live-rules hub, SDK reference, per-engine guides, publishing.
+- `references/` — live-rules hub, SDK reference, Three.js/Vite and other
+  per-engine guides, publishing.
 - `assets/ya-sdk.js` — a copy-paste Yandex SDK wrapper for HTML5 games.
 
 ## License

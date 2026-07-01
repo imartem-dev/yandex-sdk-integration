@@ -1,6 +1,6 @@
 ---
 name: yandex-games-dev
-description: Use when building or publishing a game for Yandex Games (Я.Игры) — integrating the Yandex Games SDK (ads, leaderboards, cloud saves, purchases) for HTML5/browser, Godot, or Unity, and passing Yandex moderation. ALWAYS fetch the current Yandex rules and SDK docs first.
+description: Use when building or publishing a game for Yandex Games (Я.Игры) — integrating the Yandex Games SDK (ads, leaderboards, cloud saves, purchases) for HTML5/browser games including Three.js with TypeScript/Vite, Godot, or Unity, and passing Yandex moderation. ALWAYS fetch the current Yandex rules and SDK docs first.
 ---
 
 # Building games for Yandex Games (Я.Игры)
@@ -20,7 +20,8 @@ Read the current **requirements**, **moderation rules**, and **SDK reference**.
 ## When to use this skill
 
 Building a game for Yandex Games, integrating its SDK, or publishing/passing
-moderation — in a browser/HTML5 engine, Godot, or Unity.
+moderation — in a browser/HTML5 engine (including Three.js with TypeScript/Vite),
+Godot, or Unity.
 
 ## Universal workflow
 
@@ -41,6 +42,7 @@ moderation — in a browser/HTML5 engine, Godot, or Unity.
 | Live rules, requirements, moderation | `references/rules-and-requirements.md` |
 | Yandex Games SDK (ads, saves, leaderboards, purchases) | `references/yandex-sdk.md` |
 | Browser / HTML5 (JS, Phaser, PixiJS, Construct) | `references/browser-html5.md` |
+| Three.js + TypeScript + Vite | `references/threejs-vite.md` |
 | Godot 4 (Web export) | `references/godot.md` |
 | Unity (WebGL) | `references/unity.md` |
 | Publishing, console, localization | `references/publishing.md` |
