@@ -253,14 +253,22 @@ keyboard shortcuts.
 
 ## 7. Local and draft testing
 
-Run Vite, then route it through the official SDK proxy:
+For routine development, copy `assets/serve-yandex-local.mjs` from this skill to
+the project's `scripts/` folder and add a loopback-only command:
 
-```bash
-npm run dev
-npx @yandex-games/sdk-dev-proxy -h http://localhost:5173 --dev-mode=true
+```json
+{
+  "scripts": {
+    "dev:yandex": "npm run build:yandex && node scripts/serve-yandex-local.mjs"
+  }
+}
 ```
 
-The dev environment supplies SDK mocks and does not require a registered draft.
+The server must bind explicitly to `127.0.0.1`, never `0.0.0.0`, and must not
+install or trust a shared development certificate. It serves the exact Yandex
+build and proxies `/sdk.js` to Yandex's development adapter over HTTPS.
+
+The development adapter supplies SDK mocks and does not require a registered draft.
 Use mock URL parameters to test authorization and orientation, for example
 `lockedOrientation: "landscape"`. Test both success and error callbacks for ads,
 authorization, saves, and purchases.

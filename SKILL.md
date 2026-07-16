@@ -1,9 +1,9 @@
 ---
-name: yandex-games-dev
-description: Use when building or publishing a game for Yandex Games (Я.Игры) — integrating the Yandex Games SDK (ads, leaderboards, cloud saves, purchases) for HTML5/browser games including Three.js with TypeScript/Vite, Godot, or Unity, and passing Yandex moderation. ALWAYS fetch the current Yandex rules and SDK docs first.
+name: yandex-sdk-integration
+description: Use when integrating, testing, packaging, or publishing a game for Yandex Games (Я.Игры), including the Yandex Games SDK, ads, cloud saves, purchases, platform lifecycle, HTML5/Three.js/Vite builds, Godot or Unity exports, local SDK mocks, drafts, and moderation. ALWAYS fetch the current Yandex rules and SDK docs first.
 ---
 
-# Building games for Yandex Games (Я.Игры)
+# Integrating games with Yandex Games (Я.Игры)
 
 ## Step 0 — Fetch the CURRENT rules first (do not skip)
 
@@ -17,21 +17,15 @@ code, open and read the live docs:
 Read the current **requirements**, **moderation rules**, and **SDK reference**.
 `references/rules-and-requirements.md` lists exactly what to check and the deep links.
 
-## When to use this skill
-
-Building a game for Yandex Games, integrating its SDK, or publishing/passing
-moderation — in a browser/HTML5 engine (including Three.js with TypeScript/Vite),
-Godot, or Unity.
-
 ## Universal workflow
 
 1. **Fetch current rules** (Step 0).
-2. **Pick the engine** → open the matching reference below.
-3. **Build the game as HTML5** (browser) or export to Web/WebGL (Godot/Unity).
+2. **Pick the engine** → open the matching integration reference below.
+3. **Keep platform SDK calls behind a focused service or adapter.**
 4. **Integrate the SDK** — at minimum `YaGames.init()` + `LoadingAPI.ready()`;
    then cloud saves / leaderboards / ads / purchases as needed. For HTML5 you can
    drop in `assets/ya-sdk.js`.
-5. **Test as a draft** in the developer console.
+5. **Test locally with SDK mocks**, then test as a draft in the developer console.
 6. **Package the ZIP** (`index.html` in the root) and **upload**.
 7. **Pass moderation** — run the rejection-reasons checklist first.
 

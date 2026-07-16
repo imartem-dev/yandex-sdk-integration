@@ -1,7 +1,7 @@
-# yandex-games-dev — an AI skill for building Yandex Games
+# yandex-sdk-integration — an AI skill for integrating Yandex Games
 
-A portable skill that turns any AI assistant into an expert at building and
-publishing games for **Yandex Games (Я.Игры)**: Yandex Games SDK integration
+A portable skill that helps an AI assistant integrate and publish games for
+**Yandex Games (Я.Игры)**: Yandex Games SDK integration
 (ads, leaderboards, cloud saves, purchases) for **browser/HTML5, Three.js with
 TypeScript/Vite, Godot, and Unity**, plus the publishing and moderation rules.
 
@@ -11,7 +11,7 @@ trusting frozen copies.
 
 ## Use it with any AI
 
-- **Claude Code:** copy this folder to `~/.claude/skills/yandex-games-dev/`.
+- **Claude Code:** copy this folder to `~/.claude/skills/yandex-sdk-integration/`.
   It auto-activates from the `SKILL.md` description.
 - **Cursor / other rule-based tools:** point a rule at `SKILL.md` (and the
   relevant `references/*.md`).
@@ -24,6 +24,8 @@ trusting frozen copies.
 - `references/` — live-rules hub, SDK reference, Three.js/Vite and other
   per-engine guides, publishing.
 - `assets/ya-sdk.js` — a copy-paste Yandex SDK wrapper for HTML5 games.
+- `assets/serve-yandex-local.mjs` — a loopback-only local server for a Yandex
+  build and the official development SDK adapter.
 
 ## License
 
